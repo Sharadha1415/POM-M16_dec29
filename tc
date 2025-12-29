@@ -1,0 +1,47 @@
+open the browser
+enter the url
+click on login
+enter invalid email and pwd
+click on login button
+verify the unsucessfull login msg
+
+-------------------------------------------------------------------------
+
+open the browser
+enter the url
+verify whether login in present
+click on login
+enter valid email and pwd
+click on login button
+verify if login is succesfull
+hover the cursor to the computers
+click on desktop
+handle sort by dropdown --> low to high
+handle view as dropdown --> list
+one page scroll
+click on simple computers
+select the processor
+add to cart
+scroll back to the start of application
+click on shopping cart
+handle country dropdown
+click on checkbox
+click on checkout button
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
