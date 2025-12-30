@@ -9,11 +9,11 @@ class LoginPage:
         self.driver = driver            ## self.driver --> setup --> driver --> webdriver.Chrome()
         self.wait = WebDriverWait(driver, 30)
 
-    def enter_email(self):
-        self.driver.find_element("id", "Email").send_keys('abcdefgh@gmail.com')
+    def enter_email(self, email_id):
+        self.driver.find_element("id", "Email").send_keys(email_id)
 
-    def enter_password(self):
-        self.driver.find_element("id", "Password").send_keys("123456789")
+    def enter_password(self, password):
+        self.driver.find_element("id", "Password").send_keys(password)
 
     def click_login_btn(self):
         self.driver.find_element("css selector", 'input[value="Log in"]').click()

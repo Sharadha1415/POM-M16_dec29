@@ -1,27 +1,27 @@
-import time
-
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
-opts = webdriver.ChromeOptions()
-opts.add_experimental_option("detach", True)
-
-driver = webdriver.Chrome(opts)
-wait = WebDriverWait(driver, 30)
-
-driver.get("https://demowebshop.tricentis.com/")
-time.sleep(2)
-
-driver.find_element("xpath", '//a[text()="Log in"]').click()
-time.sleep(2)
-driver.find_element("id", "Email").send_keys('abcdefgh@gmail.com')
-driver.find_element("id", "Password").send_keys("123456789")
-driver.find_element("css selector", 'input[value="Log in"]').click()
-time.sleep(2)
-
-wait.until(EC.visibility_of_element_located(('xpath', '//span[contains(text(), "Login was unsuccessful")]')))
-
+# import time
+#
+# from selenium import webdriver
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
+#
+# opts = webdriver.ChromeOptions()
+# opts.add_experimental_option("detach", True)
+#
+# driver = webdriver.Chrome(opts)
+# wait = WebDriverWait(driver, 30)
+#
+# driver.get("https://demowebshop.tricentis.com/")
+# time.sleep(2)
+#
+# driver.find_element("xpath", '//a[text()="Log in"]').click()
+# time.sleep(2)
+# driver.find_element("id", "Email").send_keys('abcdefgh@gmail.com')
+# driver.find_element("id", "Password").send_keys("123456789")
+# driver.find_element("css selector", 'input[value="Log in"]').click()
+# time.sleep(2)
+#
+# wait.until(EC.visibility_of_element_located(('xpath', '//span[contains(text(), "Login was unsuccessful")]')))
+#
 
 #####################################################################################################################
 
