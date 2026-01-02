@@ -4,7 +4,7 @@ from POM.desktop_page import DesktopPage
 from POM.simplecomp_page import SimpleComputerPage
 from POM.cart_page import CartPage
 
-from utilities.excel_utility import read_excel
+from generic_utilities.excel_utility import read_excel
 
 path = r'C:\Users\Ramya\PycharmProjects\POM-M16-Dec26-2025\external_files\testdata.xlsx'
 data = read_excel(path, 'data')
@@ -43,7 +43,7 @@ def test_checkout(setup):
     simp.add_to_cart()
     simp.close_noti()
     simp.click_shopping_cart()
-    cart.select_country("India")
+    cart.select_country(data['country'])
     cart.click_terms_service()
     cart.click_checkout()
 

@@ -11,10 +11,6 @@ def read_excel(file_path, sheetname):
 
     return d
 
-path = r'C:\Users\Ramya\PycharmProjects\POM-M16-Dec26-2025\external_files\testdata.xlsx'
-data = read_excel(path, 'data')
-print(data)
-
 
 
 
