@@ -1,6 +1,6 @@
 A Page Object Model (POM) in Selenium is a design pattern where each web page of an application is represented as a
  separate class, containing methods to interact with its web elements, essentially creating an
- object repository that improves code reusability and makes test maintenance easier by centralizing
+ object repository and uitlities that improves code reusability and makes test maintenance easier by centralizing
  UI element interactions and reducing code duplication when changes occur on the web page;
  this allows for cleaner, more modular test scripts where each page is treated as an object with
  defined actions to perform on it.
@@ -31,7 +31,6 @@ Benefits of using POM:
 
 ###############################################################################################
 
-
 Data-Driven Testing (DDT) is a software testing methodology where test input and
 output values are read from external data sources (like Excel, text file, CSV, JSON, or databases),
 rather than being hard-coded into the test scripts.
@@ -59,10 +58,10 @@ Why use a framework in Selenium?
 #################################################################################################################################################
 
 What is Generic components in Automation Framework?
-	it’s one of the automation framework components which is common for all the application
+	it’s one of the automation framework components which is common for all the applications
 	its collection of generic modules contains reusable methods / libraries
     The methods which can be used to any application is called Generic/common methods
- 	 It is used to store all the generic modules
+ 	It is used to store all the generic modules
 
 
 What is the advantages of Generic components?
